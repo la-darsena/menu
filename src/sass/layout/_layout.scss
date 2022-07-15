@@ -1,0 +1,19 @@
+//variables
+$gutter-width: 6.4rem;
+$gutter-width-small: 4.8rem;
+
+.container {
+  padding: 0 1.6rem;
+}
+
+.flex-column {
+  flex: 1 0 40rem;
+
+  @include respond(phone-small) {
+    flex: 1 0 30rem;
+  }
+}
+
+.single-column {
+  @include column(1);
+}

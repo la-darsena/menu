@@ -1,0 +1,19 @@
+.header {
+  &__switch-container {
+    width: 100%;
+    padding: 3.2rem 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__logo-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 18rem;
+    height: 18rem;
+  }
+}

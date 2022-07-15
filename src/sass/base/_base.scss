@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+//set border-box and remove defalt margins and paddings on all elements
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//setting the root font size to 10px
+html {
+  font-size: 62.5%;
+}
+
+//remove default text decoration on links
+a {
+  text-decoration: none;
+}
+
+//remove default styles to lists
+ol,
+ul {
+  list-style: none;
+}
+
+//prevent media elements from exceding container size
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+//set canvas position to absolute to display content on top of it
+canvas {
+  position: absolute;
+  opacity: 0.85;
+}
+
+img {
+  display: block;
+}
+
+//input elements inherit font properties
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+//set base text color and background to transparent
+html {
+  color: $color-primary-dark;
+  background-color: $color-white;
+}
