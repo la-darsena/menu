@@ -1,0 +1,42 @@
+.dropdown-item {
+  line-height: 140%;
+
+  &__subsection {
+    display: flex;
+    color: $color-accent;
+    text-transform: uppercase;
+    font-weight: 500;
+    align-items: center;
+    gap: 1.6rem;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      flex: 1;
+      background-color: $color-accent;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.6rem;
+  }
+
+  &__name {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  &__text {
+    letter-spacing: 0.0425rem;
+  }
+  &__price {
+    color: $color-accent;
+    font-weight: 400;
+    flex-shrink: 0;
+  }
+}

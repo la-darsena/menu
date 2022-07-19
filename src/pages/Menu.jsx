@@ -1,38 +1,37 @@
-import React from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import RistoranteImg from "../assets/images/ristorante.webp";
 import ViniImg from "../assets/images/vini.webp";
 import AperitiviImg from "../assets/images/aperitivi.webp";
 import MenuDropdown from "../components/MenuDropdown";
+import Sezioni from "../dataSezioni";
 
 function Menu() {
   const location = useLocation();
-  const headerImages = {
-    "/ristorante": RistoranteImg,
-    "/vini": ViniImg,
-    "/aperitivo": AperitiviImg,
+  const [openDropdown, setOpenDropdown] = useState(-1);
+
+  const path = location.pathname.replace("/", "");
+
+  const handleClick = (index) => {
+    if (index !== openDropdown) {
+      setOpenDropdown(index);
+    } else {
+      setOpenDropdown(-1);
+    }
   };
 
-  const menuEntries = {
-    "/ristorante": [
-      "menù degustazione",
-      "antipasti",
-      "primi piatti",
-      "secondi piatti",
-      "dessert",
-      "bevande",
-    ],
-    "/vini": [],
-    "/aperitivo": [],
-    "/": [],
+  const headerImages = {
+    ristorante: RistoranteImg,
+    vini: ViniImg,
+    aperitivo: AperitiviImg,
   };
+
+  const dataSezioni = Sezioni;
 
   return (
     <div
       className={`menu ${
-        location.pathname === "/ristorante" ||
-        location.pathname === "/vini" ||
-        location.pathname === "/aperitivo"
+        path === "ristorante" || path === "vini" || path === "aperitivo"
           ? "menu--visible"
           : ""
       }`}
@@ -40,24 +39,34 @@ function Menu() {
       <div
         className="menu__header"
         style={{
-          backgroundImage: "url(" + headerImages[location.pathname] + ")",
+          backgroundImage: "url(" + headerImages[path] + ")",
         }}
       >
-        <div className="section-button__name">
-          {location.pathname === "/ristorante"
+        <h1 className="section-button__name">
+          {path === "ristorante"
             ? "Ristorante"
-            : location.pathname === "/vini"
+            : path === "vini"
             ? "Carta dei vini"
-            : location.pathname === "/aperitivo"
+            : path === "aperitivo"
             ? "Aperitivo"
             : ""}
-        </div>
+        </h1>
       </div>
-      <ul className="menu__dropdown-list">
-        {menuEntries[location.pathname].map((item) => (
-          <MenuDropdown title={item} />
-        ))}
-      </ul>
+
+      {path && (
+        <ul className="menu__dropdown-list">
+          {dataSezioni[path].map((item, index) => (
+            <MenuDropdown
+              key={item.nome}
+              title={item.nome}
+              index={index}
+              handleClick={handleClick}
+              openDropdown={openDropdown}
+              content={item.contenuto}
+            />
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

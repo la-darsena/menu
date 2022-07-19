@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import SectionButton from "../components/SectionButton";
 
 import RistoranteImg from "../assets/images/ristorante.webp";
@@ -5,6 +8,12 @@ import ViniImg from "../assets/images/vini.webp";
 import AperitiviImg from "../assets/images/aperitivi.webp";
 
 function Landing() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   const Sections = [
     {
       ita: "Ristorante",
