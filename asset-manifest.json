@@ -1,22 +1,39 @@
 {
   "files": {
-    "main.css": "/menu/static/css/main.4bece8ba.css",
-    "main.js": "/menu/static/js/main.8a65a5de.js",
+    "main.css": "/menu/static/css/main.e04992ba.css",
+    "main.js": "/menu/static/js/main.3bec6326.js",
     "static/js/787.6b503308.chunk.js": "/menu/static/js/787.6b503308.chunk.js",
-    "static/media/ristorante.webp": "/menu/static/media/ristorante.114f959fe30e997c6d7e.webp",
-    "static/media/aperitivi.webp": "/menu/static/media/aperitivi.79f90f263349410e16c9.webp",
+    "static/media/aperitivi.webp": "/menu/static/media/aperitivi.9b2486c8242a41c39c6d.webp",
+    "static/media/ristorante-pranzo.webp": "/menu/static/media/ristorante-pranzo.fc5cc934328cd5b6da25.webp",
+    "static/media/pranzo.webp": "/menu/static/media/pranzo.3338c08fa0249914b9e8.webp",
+    "static/media/ristorante-cena.webp": "/menu/static/media/ristorante-cena.2e0f9ae503e620288363.webp",
+    "static/media/cena.webp": "/menu/static/media/cena.3ca48a5e1814b192680e.webp",
     "static/media/logo.svg": "/menu/static/media/logo.7a9cf02f93a726ad306ff26c0747133f.svg",
     "static/media/vini.webp": "/menu/static/media/vini.b3e52d409c08eded44ca.webp",
+    "static/media/sesamo.svg": "/menu/static/media/sesamo.d37811dc847b7efff5c8b31a8a13ace3.svg",
+    "static/media/crostacei.svg": "/menu/static/media/crostacei.02398b81e675b63f723b64e2a1c93af1.svg",
+    "static/media/solfiti.svg": "/menu/static/media/solfiti.77c8b6650d76be29d418d8d53d62eb4f.svg",
+    "static/media/soia.svg": "/menu/static/media/soia.727bce7d7c6786481f1190fba85d927b.svg",
+    "static/media/cerali.svg": "/menu/static/media/cerali.62cb212bab8aa069134a818829fdef8c.svg",
+    "static/media/lupini.svg": "/menu/static/media/lupini.bfcb4756f7efb4bc4088fc6d44d49f9b.svg",
+    "static/media/arachidi.svg": "/menu/static/media/arachidi.dcabddc0b5d8eefa8a1fb38749963166.svg",
+    "static/media/pesce.svg": "/menu/static/media/pesce.8b68985a8946e88472e77be5a9c7af32.svg",
+    "static/media/sedano.svg": "/menu/static/media/sedano.7fb5e6d8405a92df57bbf2d3c44e801a.svg",
+    "static/media/molluschi.svg": "/menu/static/media/molluschi.1202305b5701231270dd4d1e6b5c6b93.svg",
+    "static/media/frutta_a_guscio.svg": "/menu/static/media/frutta_a_guscio.f78ff2355914094160763cd41792ef30.svg",
+    "static/media/latte.svg": "/menu/static/media/latte.b65baf848be44473c4811fc5b843d4c2.svg",
+    "static/media/senape.svg": "/menu/static/media/senape.ce641eb37998327026585371ef0c1757.svg",
+    "static/media/uova.svg": "/menu/static/media/uova.38cb4d6e9682b6f997b117a8a0123e4c.svg",
     "static/media/eng.svg": "/menu/static/media/eng.45268d09a0c4e9dfa31c061b4c335d92.svg",
     "index.html": "/menu/index.html",
     "static/media/ita.svg": "/menu/static/media/ita.5707252bac434cf9ab6d68b64de3985d.svg",
     "static/media/back_arrow.svg": "/menu/static/media/back_arrow.afa8f6bfa220258ba24d709deafcf5a2.svg",
-    "main.4bece8ba.css.map": "/menu/static/css/main.4bece8ba.css.map",
-    "main.8a65a5de.js.map": "/menu/static/js/main.8a65a5de.js.map",
+    "main.e04992ba.css.map": "/menu/static/css/main.e04992ba.css.map",
+    "main.3bec6326.js.map": "/menu/static/js/main.3bec6326.js.map",
     "787.6b503308.chunk.js.map": "/menu/static/js/787.6b503308.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bece8ba.css",
-    "static/js/main.8a65a5de.js"
+    "static/css/main.e04992ba.css",
+    "static/js/main.3bec6326.js"
   ]
 }
