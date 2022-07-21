@@ -1,9 +1,11 @@
 import Ristorante from "./dataRistorante";
 import Vini from "./dataVini";
 import Aperitivo from "./dataAperitivo";
+import RistorantePranzo from "./dataRistorantePranzo";
 
 const Sezioni = {
-  ristorante: Ristorante,
+  "ristorante-cena": Ristorante,
+  "ristorante-pranzo": RistorantePranzo,
   vini: Vini,
   aperitivo: Aperitivo,
 };

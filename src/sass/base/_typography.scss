@@ -1,3 +1,10 @@
 html {
   font-family: $font-default;
 }
+
+.body-text {
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: 300;
+  color: rgba($color-primary-dark, 0.9);
+}

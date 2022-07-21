@@ -1,0 +1,27 @@
+.innerpage {
+  opacity: 0;
+  visibility: hidden;
+
+  width: 100%;
+  min-height: 100vh;
+  background-color: $color-white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 8rem;
+  transition: 0.4s;
+
+  .menu__header {
+    opacity: 0;
+  }
+
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+
+    .menu__header {
+      opacity: 0;
+      animation: slideUpLight 0.3s cubic-bezier(0.14, 0, 0.07, 1) forwards;
+    }
+  }
+}

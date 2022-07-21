@@ -54,14 +54,64 @@
   border: none;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  animation: slideUp 0.4s cubic-bezier(0.14, 0, 0.07, 1) forwards;
 
   &__name {
-    font-size: 3.2rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 500;
     color: $color-white;
     padding: 0.8rem 3.2rem;
     display: inline-block;
     border-radius: 200rem;
-    background-color: rgba($color-primary-dark, 0.3);
+    background-color: rgba($color-primary-dark, 0.4);
+  }
+}
+
+.button {
+  &--secondary {
+    padding: 2.4rem 4.8rem;
+    border: 1px rgba($color-primary-dark, 0.5) solid;
+    background-color: transparent;
+    border-radius: 100rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-primary-dark;
+  }
+
+  &--round {
+    width: 4.8rem;
+    height: 4.8rem;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 38% 50%;
+    background-size: 50%;
+    top: 6.4rem;
+    left: 1.6rem;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba($color-primary-dark, 0.3);
+    background-color: $color-white;
+  }
+
+  &--up {
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    bottom: 2.4rem;
+    right: 1.6rem;
+    left: unset;
+    top: unset;
+    font-size: 2.4rem;
+    color: rgba($color-primary-dark, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }

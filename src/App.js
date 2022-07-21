@@ -1,18 +1,19 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 import Header from "./components/Header";
 import Landing from "./pages/Landing";
 import Menu from "./pages/Menu";
+import InnerPage from "./pages/InnerPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="container">
-        <Header />
         <Landing />
         <Menu />
+        <InnerPage />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
