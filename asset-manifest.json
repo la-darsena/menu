@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/menu/static/css/main.e04992ba.css",
-    "main.js": "/menu/static/js/main.9006e936.js",
+    "main.css": "/menu/static/css/main.2ae4ef1f.css",
+    "main.js": "/menu/static/js/main.408edc2f.js",
     "static/js/787.6b503308.chunk.js": "/menu/static/js/787.6b503308.chunk.js",
+    "static/media/intro.mp4": "/menu/static/media/intro.4e6fca42a0a4da0c87e6.mp4",
     "static/media/aperitivi.webp": "/menu/static/media/aperitivi.9b2486c8242a41c39c6d.webp",
     "static/media/ristorante-pranzo.webp": "/menu/static/media/ristorante-pranzo.fc5cc934328cd5b6da25.webp",
     "static/media/pranzo.webp": "/menu/static/media/pranzo.3338c08fa0249914b9e8.webp",
@@ -28,12 +29,12 @@
     "index.html": "/menu/index.html",
     "static/media/ita.svg": "/menu/static/media/ita.5707252bac434cf9ab6d68b64de3985d.svg",
     "static/media/back_arrow.svg": "/menu/static/media/back_arrow.afa8f6bfa220258ba24d709deafcf5a2.svg",
-    "main.e04992ba.css.map": "/menu/static/css/main.e04992ba.css.map",
-    "main.9006e936.js.map": "/menu/static/js/main.9006e936.js.map",
+    "main.2ae4ef1f.css.map": "/menu/static/css/main.2ae4ef1f.css.map",
+    "main.408edc2f.js.map": "/menu/static/js/main.408edc2f.js.map",
     "787.6b503308.chunk.js.map": "/menu/static/js/787.6b503308.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e04992ba.css",
-    "static/js/main.9006e936.js"
+    "static/css/main.2ae4ef1f.css",
+    "static/js/main.408edc2f.js"
   ]
 }
