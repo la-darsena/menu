@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/menu/static/css/main.41729175.css",
-    "main.js": "/menu/static/js/main.32169557.js",
+    "main.css": "/menu/static/css/main.4ecc482d.css",
+    "main.js": "/menu/static/js/main.1f86ce53.js",
     "static/js/787.6b503308.chunk.js": "/menu/static/js/787.6b503308.chunk.js",
     "static/media/intro.mp4": "/menu/static/media/intro.4e6fca42a0a4da0c87e6.mp4",
-    "static/media/aperitivi.webp": "/menu/static/media/aperitivi.9b2486c8242a41c39c6d.webp",
-    "static/media/ristorante-pranzo.webp": "/menu/static/media/ristorante-pranzo.fc5cc934328cd5b6da25.webp",
-    "static/media/pranzo.webp": "/menu/static/media/pranzo.3338c08fa0249914b9e8.webp",
-    "static/media/ristorante-cena.webp": "/menu/static/media/ristorante-cena.2e0f9ae503e620288363.webp",
-    "static/media/cena.webp": "/menu/static/media/cena.3ca48a5e1814b192680e.webp",
+    "static/media/aperitivi.webp": "/menu/static/media/aperitivi.d6006c1827107967493f.webp",
+    "static/media/ristorante-pranzo.webp": "/menu/static/media/ristorante-pranzo.a3792c1a4694efe9534f.webp",
+    "static/media/ristorante-cena.webp": "/menu/static/media/ristorante-cena.707fea2e6b8393b4e84f.webp",
+    "static/media/cena.webp": "/menu/static/media/cena.d7388753853060d5eaab.webp",
+    "static/media/pranzo.webp": "/menu/static/media/pranzo.2897fa140b792a3c077d.webp",
     "static/media/logo.svg": "/menu/static/media/logo.45b59ad4043fbd7b173da230a28567be.svg",
     "static/media/vini.webp": "/menu/static/media/vini.b3e52d409c08eded44ca.webp",
     "static/media/sesamo.svg": "/menu/static/media/sesamo.6a7c39a9a40c8ba34dccdf8c38bb743d.svg",
@@ -29,12 +29,12 @@
     "index.html": "/menu/index.html",
     "static/media/ita.svg": "/menu/static/media/ita.9c01aee5e835c572b3e20fd451088939.svg",
     "static/media/back_arrow.svg": "/menu/static/media/back_arrow.0a9da12ae66db9c980436c9e3ab54813.svg",
-    "main.41729175.css.map": "/menu/static/css/main.41729175.css.map",
-    "main.32169557.js.map": "/menu/static/js/main.32169557.js.map",
+    "main.4ecc482d.css.map": "/menu/static/css/main.4ecc482d.css.map",
+    "main.1f86ce53.js.map": "/menu/static/js/main.1f86ce53.js.map",
     "787.6b503308.chunk.js.map": "/menu/static/js/787.6b503308.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41729175.css",
-    "static/js/main.32169557.js"
+    "static/css/main.4ecc482d.css",
+    "static/js/main.1f86ce53.js"
   ]
 }
