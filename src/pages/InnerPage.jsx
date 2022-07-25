@@ -68,6 +68,7 @@ function InnerPage() {
                 image={item.image}
                 link={item.link}
                 index={index}
+                animated={true}
               />
             ))}
           </div>

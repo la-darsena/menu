@@ -56,7 +56,10 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
-  animation: slideUp 0.4s cubic-bezier(0.14, 0, 0.07, 1) forwards;
+
+  &--animated {
+    animation: slideUp 0.4s cubic-bezier(0.14, 0, 0.07, 1) forwards;
+  }
 
   &__name {
     font-size: 3rem;

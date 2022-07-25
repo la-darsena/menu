@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 
-function SectionButton({ name, image, link, index }) {
+function SectionButton({ name, image, link, index, animated }) {
   return (
     <Link to={"/" + link}>
       <button
-        className="section-button"
+        className={`section-button ${
+          animated ? "section-button--animated" : ""
+        }`}
         style={{
           backgroundImage: "url(" + image + ")",
           animationDelay: 0.1 + index / 30 + "s",

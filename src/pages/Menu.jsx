@@ -38,6 +38,10 @@ function Menu() {
     };
   }, [upButtonVisible]);
 
+  useEffect(() => {
+    setOpenDropdown(-1);
+  }, [location]);
+
   const handleClick = (e, index) => {
     //e.target.scrollIntoView({ behavior: "smooth" });
     if (index !== openDropdown) {
@@ -77,8 +81,8 @@ function Menu() {
           className="button button--round"
           style={{ backgroundImage: "url(" + BackIcon + ")" }}
           onClick={() => {
-            handleClick(-1);
             navigate(-1);
+            handleClick(-1);
           }}
         ></button>
         <h1 className="section-button__name">

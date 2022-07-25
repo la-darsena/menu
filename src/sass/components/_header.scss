@@ -4,6 +4,8 @@
     padding: 3.2rem 0;
     display: flex;
     justify-content: flex-end;
+    opacity: 0;
+    animation: fadeIn 0.1s linear 1.5s forwards;
   }
 
   &__logo-box {
@@ -12,7 +14,9 @@
     justify-content: center;
     opacity: 0;
 
-    animation: fadeIn 0.1s linear 1.8s forwards;
+    &--appearing {
+      animation: fadeIn 0.1s linear 1.9s forwards;
+    }
 
     &--animated {
       position: absolute;
@@ -20,13 +24,18 @@
       left: 50%;
       z-index: 1000;
       opacity: 1;
-
-      animation: logoTranslation 1.9s cubic-bezier(1, 0, 0.4, 0.99) forwards;
-
+      transform: translate(-50%, -50%);
       svg * {
         fill: $color-white;
+      }
 
-        animation: changeColor 2s ease-out;
+      &--started {
+        animation: logoTranslation 1.9s cubic-bezier(1, 0, 0.4, 0.99) forwards;
+        svg * {
+          fill: $color-white;
+
+          animation: changeColor 2s ease-out;
+        }
       }
     }
   }

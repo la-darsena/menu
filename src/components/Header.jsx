@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from "../assets/logo.svg";
 import { ReactComponent as ItaIcon } from "../assets/icons/ita.svg";
 import { ReactComponent as EngIcon } from "../assets/icons/eng.svg";
 
-function Header() {
+function Header({ animated }) {
   const [isEng, setIsEng] = useState(false);
 
   const toggleLanguage = () => {
@@ -34,7 +34,11 @@ function Header() {
           </div>
         </button>
       </div>
-      <div className="header__logo-box">
+      <div
+        className={`header__logo-box ${
+          animated ? "header__logo-box--appearing" : ""
+        }`}
+      >
         <Logo className="header__logo" />
       </div>
     </header>

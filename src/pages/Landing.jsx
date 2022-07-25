@@ -15,7 +15,8 @@ import AllergeniList from "../components/AllergeniList";
 function Landing() {
   const location = useLocation();
   const [isIntroEnded, setIntroEnded] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [landingVisible, setLandingVisible] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -43,21 +44,21 @@ function Landing() {
         location.pathname !== "/" ? "landing__container--hidden" : ""
       }`}
     >
-      <Header />
-      {isIntroEnded && (
-        <>
-          <div className="sections-container">
-            {Sections.map((item, index) => (
-              <SectionButton
-                name={item.ita}
-                image={item.image}
-                link={item.link}
-                index={index}
-              />
-            ))}
-          </div>
-        </>
-      )}
+      <Header animated={isLoaded} />
+      <>
+        <div className="sections-container">
+          {Sections.map((item, index) => (
+            <SectionButton
+              name={item.ita}
+              image={item.image}
+              link={item.link}
+              index={index}
+              animated={landingVisible}
+            />
+          ))}
+        </div>
+      </>
+
       {!isIntroEnded && (
         <div className={"video-container"}>
           <video
@@ -67,14 +68,24 @@ function Landing() {
             onPlay={() => {
               setIsLoaded(true);
               setTimeout(() => {
-                setIntroEnded(true);
-              }, 1900);
+                setLandingVisible(true);
+              }, 1800);
             }}
-            className={`${isLoaded ? "video-container--animated" : ""}`}
+            onAnimationEnd={() => {
+              console.log("end");
+              setIntroEnded(true);
+            }}
+            className={`video-container--animated ${
+              isLoaded ? "video-container--animated--started" : ""
+            }`}
           >
             <source src={VideoIntro} type="video/mp4" />
           </video>
-          <div className="header__logo-box header__logo-box--animated">
+          <div
+            className={`header__logo-box header__logo-box--animated ${
+              isLoaded ? "header__logo-box--animated--started" : ""
+            }`}
+          >
             <Logo className="header__logo" />
           </div>
         </div>
