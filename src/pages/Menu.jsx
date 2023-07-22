@@ -9,10 +9,11 @@ import Sezioni from "../dataSezioni";
 import BackIcon from "../assets/icons/back_arrow.svg";
 import Sottosezione from "../components/Sottosezione";
 import AllergeniList from "../components/AllergeniList";
+import Info from "../components/Info";
 
 import smoothscroll from "smoothscroll-polyfill";
 
-function Menu() {
+function Menu({ isEng }) {
   smoothscroll.polyfill();
   const location = useLocation();
   const navigate = useNavigate();
@@ -58,7 +59,7 @@ function Menu() {
     aperitivo: AperitiviImg,
   };
 
-  const dataSezioni = Sezioni;
+  const dataSezioni = Sezioni[!isEng ? "ita" : "eng"];
 
   return (
     <div
@@ -69,46 +70,55 @@ function Menu() {
         path === "aperitivo"
           ? "menu--visible"
           : ""
-      }`}
-    >
+      }`}>
       <div
         className="menu__header"
         style={{
           backgroundImage: "url(" + headerImages[path] + ")",
-        }}
-      >
+        }}>
         <button
           className="button button--round"
           style={{ backgroundImage: "url(" + BackIcon + ")" }}
           onClick={() => {
             navigate(-1);
             handleClick(-1);
-          }}
-        ></button>
+          }}></button>
         <h1 className="section-button__name">
           {path === "ristorante-cena" || path === "ristorante-pranzo"
-            ? "Ristorante"
+            ? !isEng
+              ? "Ristorante"
+              : "Restaurant"
             : path === "vini"
-            ? "Carta dei vini"
+            ? !isEng
+              ? "Carta dei vini"
+              : "WineList"
             : path === "aperitivo"
-            ? "Aperitivo cenato"
+            ? !isEng
+              ? "Aperitivo cenato"
+              : "Aperitif"
             : ""}
         </h1>
       </div>
 
       {path && path !== "pranzo" && path !== "cena" && (
         <ul className="menu__dropdown-list">
-          {dataSezioni[path].map((item, index) => (
-            <MenuDropdown
-              key={item.nome}
-              title={item.nome}
-              index={index}
-              handleClick={handleClick}
-              openDropdown={openDropdown}
-              content={item.contenuto}
-            />
-          ))}
-          {path === "ristorante" && (
+          {dataSezioni[path].map((item, index) =>
+            item.info ? (
+              <div className="u_margin-bottom-l" key={item.info}>
+                <Info title={item.info} />
+              </div>
+            ) : (
+              <MenuDropdown
+                key={item.nome}
+                title={item.nome}
+                index={index}
+                handleClick={handleClick}
+                openDropdown={openDropdown}
+                content={item.contenuto}
+              />
+            )
+          )}
+          {path === "ristorante-cena" && (
             <div className="u_margin-top-l">
               <Sottosezione title={"Coperto 2€"} />
             </div>
@@ -125,8 +135,7 @@ function Menu() {
             left: 0,
             behavior: "smooth",
           });
-        }}
-      >
+        }}>
         &uarr;
       </button>
       <div className="menu__allergeni-button-container">
@@ -134,9 +143,8 @@ function Menu() {
           className="button--secondary"
           onClick={() => {
             setModalOpen(true);
-          }}
-        >
-          Carta degli allergeni
+          }}>
+          {!isEng ? "Carta degli allergeni" : "Allergens chart"}
         </button>
       </div>
 
@@ -145,6 +153,7 @@ function Menu() {
         closeList={() => {
           setModalOpen(false);
         }}
+        isEng={isEng}
       />
     </div>
   );

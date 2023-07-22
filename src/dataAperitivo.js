@@ -1,6 +1,6 @@
 const Aperitivo = [
   {
-    nome: "Aperitivo il montanaro",
+    nome: "Aperibeach",
     contenuto: [
       {
         sottosezione: (
@@ -16,7 +16,7 @@ const Aperitivo = [
     ],
   },
   {
-    nome: "Aperitivo Il marinaro",
+    nome: "Aperitivo Darsena",
     contenuto: [
       {
         sottosezione: "15€ bevande escluse",
@@ -38,7 +38,7 @@ const Aperitivo = [
         allergeni: ["cereali", "uova", "molluschi"],
       },
       {
-        nome: "Michetta la darsena *",
+        nome: "Michetta con tonno *",
         testo:
           "Michetta farcita con tonno, carpaccio di zucchine alla menta, maionese al wasabi e chips di patate.",
         prezzo: "12,00",
@@ -51,7 +51,7 @@ const Aperitivo = [
     contenuto: [
       {
         nome: "vino o prosecco al calice",
-        prezzo: "3,00",
+        prezzo: "3,50",
       },
       {
         nome: "Lattina 33cl",
@@ -147,27 +147,27 @@ const Aperitivo = [
       {
         nome: "gin tonic",
         testo: "Gin, acqua tonica, fetta di limone.",
-        prezzo: "5,00",
+        prezzo: "6,00",
       },
       {
         nome: "gin lemon",
         testo: "Gin, lemon soda, fetta di limone.",
-        prezzo: "5,00",
+        prezzo: "6,00",
       },
       {
         nome: "cuba libre",
         testo: "Rum bianco, Coca Cola, lime.",
-        prezzo: "5,00",
+        prezzo: "6,00",
       },
       {
-        nome: "kaipirinha",
+        nome: "caipirinha",
         testo: "Cachaca, zucchero di canna, lime.",
         prezzo: "6,00",
       },
       {
-        nome: "kaipiroska",
+        nome: "caipiroska",
         testo: "Vodka, zucchero di canna, lime.",
-        prezzo: "5,00",
+        prezzo: "6,00",
       },
     ],
   },
@@ -181,7 +181,7 @@ const Aperitivo = [
       },
       {
         nome: "orange sunrise",
-        testo: "Succo di arancia, Fanta, granatina, arancio.",
+        testo: "Succo di arancia, Fanta, granatina, arancia.",
         prezzo: "5,00",
       },
       {

@@ -49,7 +49,7 @@ const Ristorante = [
       {
         nome: "Tris di caldi *",
         testo:
-          "Seppiolina arrosto con peperoni, filetto di merluzzo al vapore con crema di ceci e curcuma, tonno dorato al panco con maionese ai frutti di bosco.",
+          "Seppiolina arrosto con peperoni, filetto di merluzzo al vapore con crema di ceci e curcuma, tonno dorato con maionese ai frutti di bosco.",
         prezzo: "15,00",
         allergeni: ["cereali", "uova", "pesce", "molluschi"],
       },
@@ -58,19 +58,22 @@ const Ristorante = [
       },
       {
         nome: "Tartare di tonno rosso *",
-        testo: "Tartare di tonno rosso condita con sale e olio.",
+        testo:
+          "Tartare di tonno rosso condita con sale Maldon e olio di produzione propria.",
         prezzo: "15,00",
         allergeni: ["crostacei", "uova", "pesce", "soia", "sedano", "solfiti"],
       },
       {
         nome: "Tartare di salmone",
-        testo: "Tartare di salmone condita con sale e olio.",
+        testo:
+          "Tartare di salmone condita con sale Maldon e olio di produzione propria.",
         prezzo: "15,00",
         allergeni: ["crostacei", "uova", "pesce", "soia", "sedano", "solfiti"],
       },
       {
         nome: "Tartare di gamberoni *",
-        testo: "Tartare di gamberoni condita con sale e senape di grani.",
+        testo:
+          "Tartare di gamberoni condita con sale Maldon, senape di grani e olio di produzione propria.",
         prezzo: "15,00",
         allergeni: ["crostacei", "uova", "pesce", "soia", "sedano", "solfiti"],
       },
@@ -79,14 +82,15 @@ const Ristorante = [
       },
       {
         nome: "Insalata di seppia *",
-        testo: "Tagliatella di seppia, gamberi rosa e salicornia.",
+        testo:
+          "Tagliatella di seppia, gamberi rosa, patate allo zafferano e salicornia.",
         prezzo: "12,00",
         allergeni: ["crostacei", "uova", "pesce", "solfiti"],
       },
       {
         nome: "Gamberone alla catalana *",
         testo:
-          "Gamberoni al vapore alla catalana (carote, sedano, cipolla di Tropea, pomodorini, fiori di cappero, sale, olio).",
+          "Gamberoni al vapore alla catalana (carote, sedano, cipolla di Tropea, pomodorini, fiori di cappero, sale Maldon e olio di produzione propria).",
         prezzo: "12,00",
         allergeni: ["crostacei", "pesce", "sedano", "solfiti"],
       },
@@ -121,7 +125,8 @@ const Ristorante = [
       },
       {
         nome: "risotto al nero di seppia *",
-        testo: "Riso vialone nano al nero di seppia profumato al lime.",
+        testo:
+          "Riso (Vialone nano) al nero di seppia profumato al lime con crudo di gamberi rossi di Mazzara e seppia.",
         prezzo: "14,00",
         allergeni: ["crostacei", "pesce", "sedano", "solfiti", "molluschi"],
       },
@@ -166,7 +171,7 @@ const Ristorante = [
       {
         nome: "filetto di rombo *",
         testo:
-          "Filetto di rombo chiodato con asparagi, ciliegino giallo e rosso al timo e limone.",
+          "Filetto di rombo chiodato con asparagi, ciliegino giallo e rosso al timo limone.",
         prezzo: "20,00",
         allergeni: ["cereali", "pesce"],
       },
@@ -178,7 +183,7 @@ const Ristorante = [
       },
       {
         nome: "fish & chips",
-        testo: "Frittura (in base al pescato del giorno) e patate fritte.",
+        testo: "Frittura (in base al pescato del giorno) e chips di patate.",
         prezzo: "15,00",
         allergeni: ["cereali", "crostacei", "molluschi"],
       },
@@ -203,13 +208,17 @@ const Ristorante = [
         nome: "Sfogliatina di crema di fava tonka",
         testo:
           "Sfogliatina croccante con crema pasticcera alla fava Tonka e frutti rossi.",
-        prezzo: "6",
+        prezzo: "6,00",
         allergeni: ["cereali", "frutta a guscio"],
       },
       {
-        nome: "Sorbetto",
-        testo: "Sorbetto al limone con prosecco.",
-        prezzo: "3,50",
+        nome: "sorbetto al limone",
+        prezzo: "3,00",
+      },
+      {
+        nome: "sorbetto corretto",
+        // testo: "Sorbetto al limone con prosecco.",
+        prezzo: "4,00",
       },
     ],
   },

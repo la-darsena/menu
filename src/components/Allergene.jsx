@@ -13,7 +13,7 @@ import SolfitiIcon from "../assets/allergeni/solfiti.svg";
 import LupiniIcon from "../assets/allergeni/lupini.svg";
 import MolluschiIcon from "../assets/allergeni/molluschi.svg";
 
-function Allergene({ name, size, label }) {
+function Allergene({ name, size, label, engName, isEng }) {
   const icons = {
     cereali: CerealiIcon,
     crostacei: CrostaceiIcon,
@@ -34,7 +34,7 @@ function Allergene({ name, size, label }) {
   return (
     <div className="allergene-container" style={{ width: size }}>
       <img src={icons[name]} alt={name} className="allergene__icon" />
-      {label && <p className="allergene-label">{name}</p>}
+      {label && <p className="allergene-label">{!isEng ? name : engName}</p>}
     </div>
   );
 }

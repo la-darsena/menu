@@ -7,7 +7,7 @@ import CenaImg from "../assets/images/cena.webp";
 import PranzoImg from "../assets/images/pranzo.webp";
 import BackIcon from "../assets/icons/back_arrow.svg";
 
-function InnerPage() {
+function InnerPage({ isEng }) {
   const location = useLocation();
   const path = location.pathname.replace("/", "");
   const navigate = useNavigate();
@@ -36,26 +36,27 @@ function InnerPage() {
     <div
       className={`innerpage ${
         path === "pranzo" || path === "cena" ? "innerpage--visible" : ""
-      }`}
-    >
+      }`}>
       <div
         className="menu__header"
         style={{
           backgroundImage: "url(" + headerImages[path] + ")",
-        }}
-      >
+        }}>
         <button
           className="button button--round"
           style={{ backgroundImage: "url(" + BackIcon + ")" }}
           onClick={() => {
             navigate(-1);
-          }}
-        ></button>
+          }}></button>
         <h1 className="section-button__name">
           {path === "cena"
-            ? "Menù cena"
+            ? !isEng
+              ? "Menù cena"
+              : "Dinner menu"
             : path === "pranzo"
-            ? "Menù pranzo"
+            ? !isEng
+              ? "Menù pranzo"
+              : "Lunch menu"
             : ""}
         </h1>
       </div>
@@ -64,7 +65,7 @@ function InnerPage() {
           <div className="sections-container">
             {Sections.map((item, index) => (
               <SectionButton
-                name={item.ita}
+                name={!isEng ? item.ita : item.eng}
                 image={item.image}
                 link={item.link}
                 index={index}

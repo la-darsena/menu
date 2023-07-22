@@ -1,5 +1,8 @@
 const RistorantePranzo = [
   {
+    info: "Il menù del pranzo comprende tre antipasti, tre primi e due secondi di pesce che variano in base al pescato del giorno.",
+  },
+  {
     nome: "piatti freddi",
     contenuto: [
       {
@@ -28,7 +31,7 @@ const RistorantePranzo = [
         prezzoSpecial: "a partire da € 7,00",
       },
       {
-        nome: "Tis di antipasti",
+        nome: "Tris di antipasti",
         prezzoSpecial: "a partire da € 10,00",
       },
     ],
@@ -51,6 +54,10 @@ const RistorantePranzo = [
       {
         nome: "gnocchi al pomodoro",
         prezzo: "7,00",
+      },
+      {
+        nome: "spaghetti alle vongole",
+        prezzo: "9,00",
       },
     ],
   },
@@ -122,15 +129,19 @@ const RistorantePranzo = [
     ],
   },
   {
-    nome: "struzzicherie",
+    nome: "stuzzicherie",
     contenuto: [
       {
         nome: "cartoccio di chips",
         prezzo: "3,50",
       },
       {
-        nome: "trancio di pizza",
+        nome: "trancio di pizza margherita",
         prezzo: "1,50",
+      },
+      {
+        nome: "trancio di pizza farcita",
+        prezzo: "2,00",
       },
       {
         nome: "pizzonde",

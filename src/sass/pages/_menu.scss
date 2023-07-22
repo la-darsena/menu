@@ -87,11 +87,13 @@
       &::before {
         border-color: $color-primary-dark;
         border-width: 3px;
+        transform: translateY(44%);
       }
 
       &::after {
         border-color: $color-primary-dark;
         border-width: 3px;
+        transform: translateX(44%);
       }
     }
   }

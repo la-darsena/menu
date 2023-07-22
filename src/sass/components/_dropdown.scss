@@ -21,9 +21,11 @@
 
   &__info {
     color: $color-accent;
-    font-weight: 500;
+    font-weight: 400;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: 0.05rem;
   }
 
   &__container {
@@ -38,6 +40,8 @@
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 0.4rem;
+    letter-spacing: 0.125rem;
+    color: rgba($color-primary-dark, 0.95);
 
     &--lowercase {
       text-transform: none;
