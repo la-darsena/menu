@@ -7,19 +7,19 @@ const RistorantePranzo = [
     contenuto: [
       {
         nome: "Insalatona mozzarella, tonno e mais",
-        prezzo: "6,00",
+        prezzo: "6,50",
       },
       {
         nome: "Insalata mista",
-        prezzo: "3,50",
+        prezzo: "4,00",
       },
       {
         nome: "Mozzarella caprese",
-        prezzo: "6,00",
+        prezzo: "6,50",
       },
       {
         nome: "contorno del giorno",
-        prezzoSpecial: "a partire da € 3,50",
+        prezzoSpecial: "a partire da € 4,00",
       },
     ],
   },
@@ -27,12 +27,12 @@ const RistorantePranzo = [
     nome: "antipasti ",
     contenuto: [
       {
-        nome: "Antipasto di pesce",
-        prezzoSpecial: "a partire da € 7,00",
+        nome: "Antipasto del giorno",
+        prezzo: "8,00",
       },
       {
         nome: "Tris di antipasti",
-        prezzoSpecial: "a partire da € 10,00",
+        prezzo: "12,00",
       },
     ],
   },
@@ -40,8 +40,8 @@ const RistorantePranzo = [
     nome: "primi piatti",
     contenuto: [
       {
-        nome: "primo di pesce",
-        prezzoSpecial: "a partire da € 9,00",
+        nome: "primi del giorno",
+        prezzoSpecial: "a partire da € 12,00",
       },
       {
         nome: "pasta in bianco",
@@ -55,76 +55,59 @@ const RistorantePranzo = [
         nome: "gnocchi al pomodoro",
         prezzo: "7,00",
       },
-      {
-        nome: "spaghetti alle vongole",
-        prezzo: "9,00",
-      },
     ],
   },
   {
     nome: "secondi piatti",
     contenuto: [
       {
-        nome: "secondo di pesce",
-        prezzoSpecial: "a partire da € 12,00",
-      },
-      {
-        nome: "frittura di paranza",
-        prezzo: "12,00",
+        nome: "secondi del giorno",
+        prezzoSpecial: "a partire da € 13,00",
       },
     ],
   },
   {
-    nome: "pizze al piatto",
+    nome: "panini & pizze",
     contenuto: [
       {
-        nome: "pizza margherita",
-        prezzo: "5,00",
-      },
-      {
-        nome: "pizza a base di pesce",
-        prezzo: "8,00",
-      },
-    ],
-  },
-  {
-    nome: "panini",
-    contenuto: [
-      {
-        nome: "prosciutto cotto",
-        prezzo: "3,00",
-      },
-      {
-        nome: "salame",
-        prezzo: "3,00",
-      },
-      {
-        nome: "prosciutto crudo",
-        prezzo: "3,50",
-      },
-      {
-        nome: "prosciutto crudo e formaggio",
+        nome: "panino al prosciutto cotto",
         prezzo: "4,00",
       },
       {
-        nome: "prosciutto crudo e mozzarella",
+        nome: "panino al salame",
         prezzo: "4,00",
       },
       {
-        nome: "bresaola e scaglie di grana",
+        nome: "panino al prosciutto crudo",
+        prezzo: "4,50",
+      },
+      {
+        nome: "panino prosciutto crudo e formaggio",
         prezzo: "5,00",
       },
       {
-        nome: "mozzarella e pomodoro",
-        prezzo: "3,50",
+        nome: "panino bresaola e scaglie di grana",
+        prezzo: "6,00",
       },
       {
-        nome: "tonno",
-        prezzo: "3,00",
+        nome: "panino mozzarella e pomodoro",
+        prezzo: "4,50",
       },
       {
-        nome: "tonno e pomodoro",
-        prezzo: "3,50",
+        nome: "panino tonno e pomodoro",
+        prezzo: "4,50",
+      },
+      {
+        nome: "panino farcito al tonno",
+        prezzo: "4,00",
+      },
+      {
+        nome: "panino prosciutto crudo e mozzarella",
+        prezzo: "5,00",
+      },
+      {
+        nome: "trancio di pizza",
+        prezzoSpecial: "a partire da € 1,50",
       },
     ],
   },
@@ -133,15 +116,7 @@ const RistorantePranzo = [
     contenuto: [
       {
         nome: "cartoccio di chips",
-        prezzo: "3,50",
-      },
-      {
-        nome: "trancio di pizza margherita",
-        prezzo: "1,50",
-      },
-      {
-        nome: "trancio di pizza farcita",
-        prezzo: "2,00",
+        prezzo: "4,00",
       },
       {
         nome: "pizzonde",
@@ -149,19 +124,19 @@ const RistorantePranzo = [
       },
       {
         nome: "pizzonde con pomodoro e mozzarella",
-        prezzo: "3,50",
+        prezzo: "4,50",
       },
       {
         nome: "pizzonde con prosciutto crudo e mozzarella",
-        prezzo: "4,00",
+        prezzo: "5,00",
       },
       {
         nome: "pizzonde con prosciutto crudo e pecorino",
-        prezzo: "4,00",
+        prezzo: "5,00",
       },
       {
         nome: "pizzonde con nutella",
-        prezzo: "3,50",
+        prezzo: "3,00",
       },
     ],
   },
@@ -171,31 +146,27 @@ const RistorantePranzo = [
       { sottosezione: "frutta" },
       {
         nome: "coppetta di ananas, melone e anguria",
-        prezzo: "3,00",
-      },
-      {
-        nome: "fetta di anguria",
         prezzo: "4,00",
       },
       {
-        nome: "fetta di melone",
-        prezzo: "4,00",
+        nome: "fetta di anguria o melone",
+        prezzo: "5,00",
       },
       { sottosezione: "dolci" },
       {
         nome: "sorbetto al limone",
-        prezzo: "3,00",
-      },
-      {
-        nome: "sorbetto corretto",
         prezzo: "4,00",
       },
       {
-        nome: "semifreddo al tiramisù",
+        nome: "sorbetto corretto (con ratafia o prosecco)",
+        prezzo: "5,00",
+      },
+      {
+        nome: "coppa tiramisù (semifreddo)",
         prezzo: "4,00",
       },
       {
-        nome: "semifreddo al pistacchio",
+        nome: "pistacchiotto (semifreddo)",
         prezzo: "4,00",
       },
     ],
@@ -209,29 +180,61 @@ const RistorantePranzo = [
         prezzo: "3,00",
       },
       {
-        nome: "Vino o prosecco al calice",
-        prezzoSpecial: "a partire da € 3,50",
+        nome: "Calice di vino",
+        prezzo: "3,50",
       },
       {
-        sottosezione: "bibite",
+        nome: "Calice di prosecco",
+        prezzo: "4,00",
+      },
+      {
+        nome: "Campari Soda",
+        prezzo: "4,00",
+      },
+      {
+        nome: "Spritz",
+        prezzo: "5,00",
+      },
+      {
+        sottosezione: "analcolici",
       },
       {
         nome: "Lattina 33cl",
-        testo: "Fanta, Pepsi Zero.",
+        testo: "Fanta, Pepsi Zero, Tè al limone, Tè alla pesca.",
         prezzo: "3,00",
       },
       {
         nome: "Spina 33cl",
-        testo:
-          "Pepsi Cola, Sprite, Seven up, Lemon Soda, Acqua tonica, Tè al limone, Tè alla pesca",
+        testo: "Pepsi Cola, 7UP, Lemon Soda, Acqua tonica",
         prezzo: "3,00",
+      },
+      {
+        nome: "Crodino",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Sanbitter bianco",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Sanbitter rosso",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Cocktail Sanpellegrino",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Succhi di frutta",
+        testo: "ACE, mirtillo, arancia, pera, pesca, albicocca",
+        prezzo: "3,50",
       },
       {
         sottosezione: "birre",
       },
       {
         nome: "Ichnusa non filtrata 33cl",
-        prezzo: "3,50",
+        prezzo: "4,00",
       },
       {
         nome: "Corona 33cl",
@@ -242,7 +245,7 @@ const RistorantePranzo = [
         prezzo: "4,00",
       },
       {
-        sottosezione: "caffè e amari",
+        sottosezione: "caffè",
       },
       {
         nome: "Caffè espresso",
@@ -250,24 +253,70 @@ const RistorantePranzo = [
       },
       {
         nome: "Caffè decaffeinato",
-        prezzo: "1,30",
+        prezzo: "1,50",
       },
       {
         nome: "Caffè corretto",
         prezzo: "1,70",
       },
       {
+        nome: "Ginseng",
+        prezzo: "1,50",
+      },
+      {
+        nome: "Orzo",
+        prezzo: "1,30",
+      },
+      {
+        nome: "Crema caffè",
+        prezzo: "2,50",
+      },
+      {
+        nome: "Cappuccino",
+        prezzo: "1,70",
+      },
+      {
+        nome: "Latte macchiato",
+        prezzo: "2,00",
+      },
+      {
+        nome: "Latte bianco",
+        prezzo: "1,20",
+      },
+      {
+        nome: "Tè e infusi",
+        prezzo: "1,50",
+      },
+      {
+        nome: "Caffè americano",
+        prezzo: "2,00",
+      },
+      {
+        nome: "Caffè shakerato",
+        prezzo: "3,00",
+      },
+      {
         nome: "Caffè shakerato con Baileys",
         prezzo: "3,50",
       },
       {
-        nome: "Amari",
-        prezzoSpecial: "a partire da € 3,00",
+        sottosezione: "amari",
       },
       {
-        nome: "Ratafia",
-        testo: "Scuppoz Abruzzo",
+        nome: "Amari",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Grappa bianca",
         prezzo: "4,00",
+      },
+      {
+        nome: "Grappa barricata",
+        prezzo: "4,50",
+      },
+      {
+        nome: "Distillati",
+        prezzo: "6,00",
       },
     ],
   },

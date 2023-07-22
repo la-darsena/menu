@@ -34,14 +34,14 @@ const AperitivoEng = [
         nome: "Ciabatta con Polpo *",
         testo:
           "Ciabatta stuffed with roasted octopus, crispy salad, turmeric mayonnaise and potato chips.",
-        prezzo: "12.00",
+        prezzo: "13.00",
         allergeni: ["cereali", "uova", "molluschi"],
       },
       {
         nome: "Michetta con tonno *",
         testo:
           "Michetta stuffed with tuna, mint zucchini carpaccio, wasabi mayonnaise and potato chips.",
-        prezzo: "12.00",
+        prezzo: "13.00",
         allergeni: ["cereali", "uova", "pesce", "frutta a guscio", "solfiti"],
       },
     ],
@@ -50,30 +50,46 @@ const AperitivoEng = [
     nome: "drinks",
     contenuto: [
       {
-        nome: "Glass of wine or prosecco",
+        nome: "glass of wine",
         prezzo: "3.50",
       },
       {
-        nome: "33cl can",
-        testo: "Fanta, Pepsi Zero.",
+        nome: "glass of prosecco",
+        prezzo: "4.00",
+      },
+      {
+        nome: "Campari Soda",
+        prezzo: "4.00",
+      },
+      {
+        nome: "Canned drinks 33cl",
+        testo: "Fanta, Pepsi Zero, Lemon tea, Peach tea",
         prezzo: "3.00",
       },
       {
-        nome: "33cl plug",
-        testo:
-          "Pepsi Cola, Sprite, Seven up, Lemon Soda, Tonic Water, Lemon Tea, Peach Tea.",
+        nome: "Tap drinks 33cl",
+        testo: "Pepsi Cola, 7UP, Lemon Soda, Tonic Water",
         prezzo: "3.00",
       },
       {
-        nome: "fruit juices",
-        prezzo: "3.00",
+        nome: "Crodino",
+        prezzo: "3.50",
       },
       {
-        nome: "crodino",
-        prezzo: "3.00",
+        nome: "Sanbitter bianco",
+        prezzo: "3.50",
       },
       {
-        nome: "campari or aperol",
+        nome: "Sanbitter rosso",
+        prezzo: "3.50",
+      },
+      {
+        nome: "Cocktail Sanpellegrino",
+        prezzo: "3.50",
+      },
+      {
+        nome: "fruit juice",
+        testo: "ACE, blueberry, orange, pear, peach, apricot",
         prezzo: "3.00",
       },
     ],

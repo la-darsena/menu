@@ -34,14 +34,14 @@ const Aperitivo = [
         nome: "Ciabatta con Polpo *",
         testo:
           "Ciabatta farcita con polpo arrostito, insalatina croccante, maionese alla curcuma e chips di patate.",
-        prezzo: "12,00",
+        prezzo: "13,00",
         allergeni: ["cereali", "uova", "molluschi"],
       },
       {
         nome: "Michetta con tonno *",
         testo:
           "Michetta farcita con tonno, carpaccio di zucchine alla menta, maionese al wasabi e chips di patate.",
-        prezzo: "12,00",
+        prezzo: "13,00",
         allergeni: ["cereali", "uova", "pesce", "frutta a guscio", "solfiti"],
       },
     ],
@@ -50,30 +50,50 @@ const Aperitivo = [
     nome: "bevande",
     contenuto: [
       {
-        nome: "vino o prosecco al calice",
+        nome: "Calice di vino",
         prezzo: "3,50",
       },
       {
+        nome: "Calice di prosecco",
+        prezzo: "4,00",
+      },
+      {
+        nome: "Campari Soda",
+        prezzo: "4,00",
+      },
+      {
+        nome: "Spritz",
+        prezzo: "5,00",
+      },
+      {
         nome: "Lattina 33cl",
-        testo: "Fanta, Pepsi Zero.",
+        testo: "Fanta, Pepsi Zero, Tè al limone, Tè alla pesca.",
         prezzo: "3,00",
       },
       {
-        nome: "Bibite alla spina 33cl",
-        testo:
-          "Pepsi Cola, Sprite, Seven up, Lemon Soda, Acqua tonica, Tè al limone, Tè alla pesca",
+        nome: "Spina 33cl",
+        testo: "Pepsi Cola, 7UP, Lemon Soda, Acqua tonica",
         prezzo: "3,00",
       },
       {
-        nome: "succhi di frutta",
-        prezzo: "3,00",
+        nome: "Crodino",
+        prezzo: "3,50",
       },
       {
-        nome: "crodino",
-        prezzo: "3,00",
+        nome: "Sanbitter bianco",
+        prezzo: "3,50",
       },
       {
-        nome: "campari o aperol",
+        nome: "Sanbitter rosso",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Cocktail Sanpellegrino",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Succhi di frutta",
+        testo: "ACE, mirtillo, arancia, pera, pesca, albicocca",
         prezzo: "3,00",
       },
     ],
@@ -83,7 +103,7 @@ const Aperitivo = [
     contenuto: [
       {
         nome: "Ichnusa non filtrata 33cl",
-        prezzo: "3,50",
+        prezzo: "4,00",
       },
       {
         nome: "Corona 33cl",

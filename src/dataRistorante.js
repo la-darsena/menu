@@ -3,7 +3,7 @@ const Ristorante = [
     nome: "menù degustazione",
     contenuto: [
       {
-        sottosezione: "45€ bevande escluse",
+        sottosezione: "50€ bevande escluse",
       },
       {
         nome: "Antipasto",
@@ -29,13 +29,13 @@ const Ristorante = [
       {
         nome: "Antipasti La Darsena",
         testo: "Assortimento di antipasti crudi freddi e caldi.",
-        prezzo: "36,00",
+        prezzo: "40,00",
       },
       {
         nome: "I crudi di mare",
         testo:
           "Assortimento di antipasti crudi a seconda del pescato di stagione.",
-        prezzo: "22,00",
+        prezzo: "25,00",
         allergeni: [
           "uova",
           "pesce",
@@ -84,34 +84,34 @@ const Ristorante = [
         nome: "Insalata di seppia *",
         testo:
           "Tagliatella di seppia, gamberi rosa, patate allo zafferano e salicornia.",
-        prezzo: "12,00",
+        prezzo: "13,00",
         allergeni: ["crostacei", "uova", "pesce", "solfiti"],
       },
       {
         nome: "Gamberone alla catalana *",
         testo:
           "Gamberoni al vapore alla catalana (carote, sedano, cipolla di Tropea, pomodorini, fiori di cappero, sale Maldon e olio di produzione propria).",
-        prezzo: "12,00",
+        prezzo: "13,00",
         allergeni: ["crostacei", "pesce", "sedano", "solfiti"],
       },
       {
         nome: "Salmone marinato",
         testo:
           "Salmone marinato a secco con soncino, pesche, filetti di mandorle tostate e panna acida.",
-        prezzo: "12,00",
+        prezzo: "13,00",
         allergeni: ["pesce", "latte", "frutta a guscio", "solfiti"],
       },
       {
         nome: "Filetto di sgombro *",
         testo: "Sgombro con cipolla di Tropea caramellata.",
-        prezzo: "12,00",
+        prezzo: "13,00",
         allergeni: ["pesce", "solfiti"],
       },
       {
         nome: "Baccalà mantecato *",
         testo:
           "Baccalà delle isole Lofoten IGP mantecato con chips di patate vitelotte e clorofilla di prezzemolo.",
-        prezzo: "14,00",
+        prezzo: "15,00",
         allergeni: ["pesce", "latte", "frutta a guscio", "solfiti"],
       },
     ],
@@ -127,20 +127,20 @@ const Ristorante = [
         nome: "risotto al nero di seppia *",
         testo:
           "Riso (Vialone nano) al nero di seppia profumato al lime con crudo di gamberi rossi di Mazzara e seppia.",
-        prezzo: "14,00",
+        prezzo: "15,00",
         allergeni: ["crostacei", "pesce", "sedano", "solfiti", "molluschi"],
       },
       {
         nome: 'chitarrone con scampi e "ferfellone" *',
         testo:
           "Chitarrone di grano duro trafilato al bronzo, con scampi, aglio, olio e peperone rosso dolce essiccato.",
-        prezzo: "14,00",
+        prezzo: "15,00",
         allergeni: ["cereali", "crostacei", "uova"],
       },
       {
         nome: "gnocchi alla darsena *",
         testo: "Gnocchi di patate con frutti di mare.",
-        prezzo: "14,00",
+        prezzo: "15,00",
         allergeni: [
           "cereali",
           "crostacei",
@@ -154,7 +154,7 @@ const Ristorante = [
         nome: "paccheri blu all'astice",
         testo:
           "Paccheri di Gragnano all'alga spirulina blu con astice al curaçao.",
-        prezzo: "18,00",
+        prezzo: "20,00",
         allergeni: ["cereali", "crostacei", "pesce"],
       },
     ],
@@ -165,7 +165,7 @@ const Ristorante = [
       {
         nome: "tonno rosso scottato *",
         testo: "Tonno rosso scottato con cicorietta ripassata all'aglio nero.",
-        prezzo: "18,00",
+        prezzo: "20,00",
         allergeni: ["pesce"],
       },
       {
@@ -178,14 +178,29 @@ const Ristorante = [
       {
         nome: "tagliata di spada *",
         testo: "Tagliata di pesce spada con misticanza e lamelle di pesca.",
-        prezzo: "18,00",
+        prezzo: "20,00",
         allergeni: ["pesce"],
       },
       {
         nome: "fish & chips",
         testo: "Frittura (in base al pescato del giorno) e chips di patate.",
-        prezzo: "15,00",
+        prezzo: "16,00",
         allergeni: ["cereali", "crostacei", "molluschi"],
+      },
+    ],
+  },
+  {
+    nome: "panini",
+    contenuto: [
+      {
+        nome: "ciabatta con polpo",
+        prezzo: "13,00",
+        allergeni: ["cereali", "molluschi"],
+      },
+      {
+        nome: "michetta con tonno",
+        prezzo: "13,00",
+        allergeni: ["cereali", "pesce"],
       },
     ],
   },
@@ -212,6 +227,10 @@ const Ristorante = [
         allergeni: ["cereali", "frutta a guscio"],
       },
       {
+        nome: "Cheescake",
+        prezzo: "6,00",
+      },
+      {
         nome: "sorbetto al limone",
         prezzo: "3,00",
       },
@@ -231,25 +250,57 @@ const Ristorante = [
         prezzo: "3,00",
       },
       {
-        sottosezione: "bibite",
+        nome: "Calice di vino",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Calice di prosecco",
+        prezzo: "4,00",
+      },
+      {
+        nome: "Campari Soda",
+        prezzo: "4,00",
+      },
+      {
+        sottosezione: "analcolici",
       },
       {
         nome: "Lattina 33cl",
-        testo: "Fanta, Pepsi Zero.",
+        testo: "Fanta, Pepsi Zero, Tè al limone, Tè alla pesca.",
         prezzo: "3,00",
       },
       {
         nome: "Spina 33cl",
-        testo:
-          "Pepsi Cola, Sprite, Seven up, Lemon Soda, Acqua tonica, Tè al limone, Tè alla pesca",
+        testo: "Pepsi Cola, 7UP, Lemon Soda, Acqua tonica",
         prezzo: "3,00",
+      },
+      {
+        nome: "Crodino",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Sanbitter bianco",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Sanbitter rosso",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Cocktail Sanpellegrino",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Succhi di frutta",
+        testo: "ACE, mirtillo, arancia, pera, pesca, albicocca",
+        prezzo: "3,50",
       },
       {
         sottosezione: "birre",
       },
       {
         nome: "Ichnusa non filtrata 33cl",
-        prezzo: "3,50",
+        prezzo: "4,00",
       },
       {
         nome: "Corona 33cl",
@@ -260,7 +311,7 @@ const Ristorante = [
         prezzo: "4,00",
       },
       {
-        sottosezione: "caffè e amari",
+        sottosezione: "caffè",
       },
       {
         nome: "Caffè espresso",
@@ -268,7 +319,7 @@ const Ristorante = [
       },
       {
         nome: "Caffè decaffeinato",
-        prezzo: "1,30",
+        prezzo: "1,50",
       },
       {
         nome: "Caffè corretto",
@@ -279,13 +330,23 @@ const Ristorante = [
         prezzo: "3,50",
       },
       {
-        nome: "Amari",
-        prezzoSpecial: "a partire da € 3,00",
+        sottosezione: "amari",
       },
       {
-        nome: "Ratafia",
-        testo: "Scuppoz Abruzzo",
+        nome: "Amari",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Grappa bianca",
         prezzo: "4,00",
+      },
+      {
+        nome: "Grappa barricata",
+        prezzo: "4,50",
+      },
+      {
+        nome: "Distillati",
+        prezzo: "6,00",
       },
     ],
   },

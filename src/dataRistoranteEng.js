@@ -3,7 +3,7 @@ const RistoranteEng = [
     nome: "degustation menu",
     contenuto: [
       {
-        sottosezione: "€45 excluding drinks",
+        sottosezione: "€50 excluding drinks",
       },
       {
         nome: "Appetizer",
@@ -29,13 +29,13 @@ const RistoranteEng = [
       {
         nome: "Antipasti La Darsena",
         testo: "Assortment of cold, hot, and raw appetizers.",
-        prezzo: "36.00",
+        prezzo: "40.00",
       },
       {
         nome: "I crudi di mare",
         testo:
           "Assortment of raw seafood appetizers, depending on the catch of the season.",
-        prezzo: "22.00",
+        prezzo: "25.00",
         allergeni: [
           "uova",
           "pesce",
@@ -83,34 +83,34 @@ const RistoranteEng = [
         nome: "Insalata di seppia *",
         testo:
           "Cuttlefish noodle, pink shrimp, saffron potatoes, and salicornia.",
-        prezzo: "12.00",
+        prezzo: "13.00",
         allergeni: ["crostacei", "uova", "pesce", "solfiti"],
       },
       {
         nome: "Gamberone alla catalana *",
         testo:
           "Catalan-style steamed king prawns (carrots, celery, Tropea onion, cherry tomatoes, caper flowers, Maldon salt, and homemade oil).",
-        prezzo: "12.00",
+        prezzo: "13.00",
         allergeni: ["crostacei", "pesce", "sedano", "solfiti"],
       },
       {
         nome: "Salmone marinato",
         testo:
           "Dry marinated salmon with sockeye, peaches, roasted almond fillets, and sour cream.",
-        prezzo: "12.00",
+        prezzo: "13.00",
         allergeni: ["pesce", "latte", "frutta a guscio", "solfiti"],
       },
       {
         nome: "Filetto di sgombro *",
         testo: "Mackerel with caramelized Tropea onion.",
-        prezzo: "12.00",
+        prezzo: "13.00",
         allergeni: ["pesce", "solfiti"],
       },
       {
         nome: "Baccalà mantecato *",
         testo:
           "Lofoten Islands cod PGI mantecato with vitelotte potato chips and parsley chlorophyll.",
-        prezzo: "14.00",
+        prezzo: "15.00",
         allergeni: ["pesce", "latte", "frutta a guscio", "solfiti"],
       },
     ],
@@ -126,20 +126,20 @@ const RistoranteEng = [
         nome: "risotto al nero di seppia *",
         testo:
           "Cuttlefish ink rice scented with lime with Mazzara red shrimp and cuttlefish.",
-        prezzo: "14.00",
+        prezzo: "15.00",
         allergeni: ["crostacei", "pesce", "sedano", "solfiti", "molluschi"],
       },
       {
         nome: 'chitarrone con scampi e "ferfellone" *',
         testo:
           "Bronze-drawn durum wheat pasta with scampi, garlic, oil and dried sweet red bell pepper.",
-        prezzo: "14.00",
+        prezzo: "15.00",
         allergeni: ["cereali", "crostacei", "uova"],
       },
       {
         nome: "gnocchi alla darsena *",
         testo: "potato gnocchi with seafood.",
-        prezzo: "14.00",
+        prezzo: "15.00",
         allergeni: [
           "cereali",
           "crostacei",
@@ -152,7 +152,7 @@ const RistoranteEng = [
       {
         nome: "paccheri blu all'astice",
         testo: "Gragnano blue spirulina seaweed paccheri with curaçao lobster.",
-        prezzo: "18.00",
+        prezzo: "20.00",
         allergeni: ["cereali", "crostacei", "pesce"],
       },
     ],
@@ -163,7 +163,7 @@ const RistoranteEng = [
       {
         nome: "tonno rosso scottato *",
         testo: "seared bluefin tuna with black garlic repassed chicory.",
-        prezzo: "18.00",
+        prezzo: "20.00",
         allergeni: ["pesce"],
       },
       {
@@ -176,15 +176,30 @@ const RistoranteEng = [
       {
         nome: "tagliata di spada *",
         testo: "swordfish tagliata with mysticanza and peach gill.",
-        prezzo: "18.00",
+        prezzo: "20.00",
         allergeni: ["pesce"],
       },
       {
         nome: "fish & chips",
         testo:
           "Fried seafood (based on the catch of the day) and potato chips.",
-        prezzo: "15.00",
+        prezzo: "16.00",
         allergeni: ["cereali", "crostacei", "molluschi"],
+      },
+    ],
+  },
+  {
+    nome: "Sandwitches",
+    contenuto: [
+      {
+        nome: "ciabatta con polpo",
+        prezzo: "13,00",
+        allergeni: ["cereali", "molluschi"],
+      },
+      {
+        nome: "michetta con tonno",
+        prezzo: "13,00",
+        allergeni: ["cereali", "pesce"],
       },
     ],
   },
@@ -194,13 +209,13 @@ const RistoranteEng = [
       {
         nome: "Semifreddo al torroncino",
         testo: "Grand Marnier liqueur semifreddo and almond crisp.",
-        prezzo: "6",
+        prezzo: "6.00",
         allergeni: ["uova", "soia", "frutta a guscio"],
       },
       {
         nome: "Tiramisù al limoncello",
         testo: "Mascarpone cream with limoncello ladyfingers.",
-        prezzo: "6",
+        prezzo: "6.00",
         allergeni: ["cereali", "uova"],
       },
       {
@@ -208,6 +223,10 @@ const RistoranteEng = [
         testo: "Crispy puff pastry with Tonka bean custard and red fruits.",
         prezzo: "6.00",
         allergeni: ["cereali", "frutta a guscio"],
+      },
+      {
+        nome: "Cheescake",
+        prezzo: "6.00",
       },
       {
         nome: "lemon sorbet",
@@ -229,18 +248,50 @@ const RistoranteEng = [
         prezzo: "3.00",
       },
       {
+        nome: "Glass of wine",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Glass of prosecco",
+        prezzo: "4,00",
+      },
+      {
+        nome: "Campari Soda",
+        prezzo: "4,00",
+      },
+      {
         sottosezione: "soft drinks",
       },
       {
-        nome: "33cl can",
-        testo: "Fanta, Pepsi Zero.",
+        nome: "Canned drinks 33cl",
+        testo: "Fanta, Pepsi Zero, Lemon tea, Peach tea",
         prezzo: "3.00",
       },
       {
-        nome: "33cl plug",
-        testo:
-          "Pepsi Cola, Sprite, Seven up, Lemon Soda, Tonic Water, Lemon Tea, Peach Tea.",
+        nome: "Tap drinks 33cl",
+        testo: "Pepsi Cola, 7UP, Lemon Soda, Tonic Water",
         prezzo: "3.00",
+      },
+      {
+        nome: "Crodino",
+        prezzo: "3.50",
+      },
+      {
+        nome: "Sanbitter bianco",
+        prezzo: "3.50",
+      },
+      {
+        nome: "Sanbitter rosso",
+        prezzo: "3.50",
+      },
+      {
+        nome: "Cocktail Sanpellegrino",
+        prezzo: "3.50",
+      },
+      {
+        nome: "fruit juice",
+        testo: "ACE, blueberry, orange, pear, peach, apricot",
+        prezzo: "3.50",
       },
       {
         sottosezione: "beers",
@@ -258,18 +309,18 @@ const RistoranteEng = [
         prezzo: "4.00",
       },
       {
-        sottosezione: "coffee and amari",
+        sottosezione: "coffee",
       },
       {
-        nome: "espresso coffee",
+        nome: "espresso",
         prezzo: "1.20",
       },
       {
-        nome: "decaffeinated coffee",
-        prezzo: "1.30",
+        nome: "Decaffeinated coffee",
+        prezzo: "1.50",
       },
       {
-        nome: "Corrected coffee",
+        nome: "corrected coffe",
         prezzo: "1.70",
       },
       {
@@ -277,13 +328,23 @@ const RistoranteEng = [
         prezzo: "3.50",
       },
       {
-        nome: "Amari",
-        prezzoSpecial: "from € 3.00",
+        sottosezione: "amari",
       },
       {
-        nome: "Ratafia",
-        testo: "Scuppoz Abruzzo",
-        prezzo: "4.00",
+        nome: "Amari",
+        prezzo: "3,50",
+      },
+      {
+        nome: "Grappa bianca",
+        prezzo: "4,00",
+      },
+      {
+        nome: "Grappa barricata",
+        prezzo: "4,50",
+      },
+      {
+        nome: "Spirits",
+        prezzo: "6,00",
       },
     ],
   },
